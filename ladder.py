@@ -1,4 +1,4 @@
-def my_steps(num):
+def my_steps(num: int):
     
     if num <= 2:
       return num 
