@@ -5,6 +5,6 @@ def sort_dictionary(dict):
       tuple = (i, dict[i][0])
       list.append(tuple)
 
-    list.sort()
+    list.sort(reverse = True)
     
     return list
