@@ -1,4 +1,4 @@
-def CombClimb(num):
+def mysteps(num):
     
     if num <= 2:
       return num 
