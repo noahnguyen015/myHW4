@@ -3,7 +3,7 @@ def my_steps(num):
     if num <= 2:
       return num 
     
-    if num > 25:
+    if num > 25 or num < 0:
       return 0
 
     list = [0] * (num)
