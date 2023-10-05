@@ -1,9 +1,9 @@
-def my_steps(num: int):
+def CombClimb(num):
     
     if num <= 2:
       return num 
     
-    if num > 25 or num < 0:
+    if num > 25:
       return 0
 
     list = [0] * (num)
@@ -13,8 +13,11 @@ def my_steps(num: int):
 
     for i in range(2,num): 
       list[i] = list[i-1] + list[i-2]
-  
-    return list[num-1]
+
+    numofways = list[num-1]
+
+
+    return numofways
 
 
 
