@@ -1,0 +1,6 @@
+Two uses of inheritance in a program is the ability to have take a function from one class and be able to use it for another class. 
+If a child class inherits a function from the parent class, it can use it as it's own function. It helps with reducing repeated code.
+
+Another use of inheritance is to be able to alter and change a function from another class. Child classes can alter inherited functions
+to do something different from the original. You can have the same function definition for different classes.
+

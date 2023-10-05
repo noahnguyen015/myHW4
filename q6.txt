@@ -1,0 +1,7 @@
+1. increment_int_a does not change variable a after the function is called
+2. increment_int_b does change variable b after the function is called
+
+3. The reason is because some data variables in Python can be changed while others cannot.
+In increment_int_a, it is not changed because integers cannot be changed through function calls.
+In increment_int_b it is changed due to it being a dictionary meaning it can change.
+Basically, data like integers and tuples cannot change, list and dictionaries can be changed in Python.
