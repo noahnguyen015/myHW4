@@ -1,10 +1,10 @@
 def my_steps(num):
     
+    if num < 1 or num > 25:
+      raise ValueError
+
     if num <= 2:
       return num 
-    
-    if num > 25 or num < 1:
-      raise ValueError
 
     list = [0] * (num)
 

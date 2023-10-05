@@ -8,8 +8,12 @@ def sortlist(list):
           list[j] = temp
 
 
-def merge_list(list1, list2):
+def merge_list(list1: list, list2 : list):
 
+    if type(list1) != list or type(list2) != list:
+      raise TypeError
+    
+    
     sortlist(list1)
     sortlist(list2)
 
