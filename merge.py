@@ -8,11 +8,16 @@ def sortlist(list):
           list[j] = temp
 
 
-def merge_list(list1: list, list2 : list):
-
-    if type(list1) != list or type(list2) != list:
-      raise TypeError
+def merge_list(list1, list2):
     
+    for i in range(0, len(list1)):
+      if isinstance(list1[i], int) == False:
+        raise TypeError
+      
+    for j in range(0, len(list2)):
+      if isinstance(list2[j], int) == False:
+        raise TypeError
+
     
     sortlist(list1)
     sortlist(list2)
@@ -24,6 +29,7 @@ def merge_list(list1: list, list2 : list):
     newlist = [0] * size
 
     while idx1 < len(list1) and idx2 < len(list2):
+
       if list1[idx1] < list2[idx2]:
         newlist[idx] = list1[idx1]
         idx1 += 1
