@@ -1,9 +1,7 @@
-
 class Base:
   def __init__(self, x, size):
     self.x = x
     self.size = size
-
 
 class Circle(Base):
   def __init__(self, x, y, size):
@@ -11,9 +9,9 @@ class Circle(Base):
       self.y = y
 
   def shape(self):
-      return 'this is a circle'
+      return 'This is a circle'
   def draw(self):
-      return f"""({self.x},{self.y})\n{self.size}
+      return f"""({self.x}, {self.y})\n{self.size}
          , - ~ ~ ~ - ,
      , '               ' ,
    ,                       ,
