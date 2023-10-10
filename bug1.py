@@ -11,7 +11,8 @@ class Circle(Base):
   def shape(self):
       return 'This is a circle'
   def draw(self):
-      return f"""({self.x}, {self.y})\n{self.size}
+      return f"""
+      ({self.x}, {self.y})\n{self.size}
          , - ~ ~ ~ - ,
      , '               ' ,
    ,                       ,
@@ -26,9 +27,9 @@ class Circle(Base):
                """
 
   
-def main():
-  s = Circle(1,2,3)
-  print(s.shape())
-  print(s.draw())
+#def main():
+#  s = Circle(1,2,3)
+#  print(s.shape())
+#  print(s.draw())
 
-main()
+#main()
